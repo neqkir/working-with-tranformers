@@ -1,12 +1,12 @@
 # working-with-tranformers
 
-`training-bert-huggingface-transformers.ipynb`
+1. `training-bert-huggingface-transformers.ipynb`
 
 Training huggingface BERT on the cc-news dataset which contains news articles from news sites all over the world. 
 
 First, we train the WordPiece tokenizer. Next, we train BERT from scratch on the Masked Language Modeling (MLM) task, masking a certain percentage of the tokens in the sentence, and the model is trained to predict those masked words.  
 
-`gpt2-text-generators.ipynb`
+2. `gpt2-text-generators.ipynb`
 
 Generating text with gpt-2 with several approaches for a generator : greedy search, beam search, sampling, top-K sampling, top-n-nucleus sampling.
 
