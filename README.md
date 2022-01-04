@@ -20,7 +20,7 @@ Autoregressive models are pretrained on the classic language modeling task: gues
 
 Autoencoding models are pretrained by corrupting the input tokens in some way and trying to reconstruct the original sentence. They correspond to the encoder of the original transformer model in the sense that they get access to the full inputs without any mask. Those models usually build a bidirectional representation of the whole sentence. They can be fine-tuned and achieve great results on many tasks such as text generation, but their most natural application is sentence classification or token classification. A typical example of such models is BERT.
 
-Note that the only difference between autoregressive models and autoencoding models is in the way the model is pretrained. Therefore, the same architecture can be used for both autoregressive and autoencoding models. When a given model has been used for both types of pretraining, we have put it in the category corresponding to the article where it was first introduced.
+Note that the only difference between autoregressive models and autoencoding models is in the way the model is pretrained. Therefore, the same architecture can be used for both autoregressive and autoencoding models. 
 
 Sequence-to-sequence models use both the encoder and the decoder of the original transformer, either for translation tasks or by transforming other tasks to sequence-to-sequence problems. They can be fine-tuned to many tasks but their most natural applications are translation, summarization and question answering. The original transformer model is an example of such a model (only for translation), T5 is an example that can be fine-tuned on other tasks.
 
@@ -32,7 +32,7 @@ Multimodal models mix text inputs with other kinds (e.g. images) and are more sp
 
 Training huggingface BERT on the cc-news dataset which contains news articles from news sites all over the world. 
 
-First, we train the WordPiece tokenizer. Next, we train BERT from scratch on the Masked Language Modeling (MLM) task, masking a certain percentage of the tokens in the sentence, and the model is trained to predict those masked words.  
+First, we train the WordPiece tokenizer. Next, we train BERT from scratch on the Masked Language Modeling (MLM) task, masking a certain percentage of the tokens in the sentence, and the model is trained to predict those masked words. Finally, model is applied to a few examples in text generation.
 
 2. `gpt2-text-generators.ipynb`
 
