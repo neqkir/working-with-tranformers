@@ -68,13 +68,25 @@ A full, clean heart of heart,
 
 3. `bart-text-summarization.ipynb`
 
-> (BART) can be seen as generalizing Bert (due to the bidirectional encoder) and GPT2 (with the left to right decoder).
+https://github.com/sshleifer/blog_v2/blob/master/_notebooks/2020-03-12-bart.ipynb
+
+BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension https://arxiv.org/pdf/1910.13461.pdf 
 
 BART starts from BERT,
 
 * adding a causal decoder to BERT's bidirectional encoder architecture
 
 * replace BERT's fill-in-the blank cloze task with a more complicated mix of pretraining tasks.
+
+> (BART) can be seen as generalizing Bert (due to the bidirectional encoder) and GPT2 (with the left to right decoder).
+
+"What information can be used use when predicting the token at position i" is controlled by an `attention_mask`. BERT has a fully visible mask, GPT a causal mask. BART (Seq2Seq) has a fully visible MASK for its encoder and a causal mask for its decoder. 
+
+Pre-training masks spans of text, an example from the original paper.
+
+<img src="https://user-images.githubusercontent.com/89974426/148036575-2e122b52-931a-45f8-b0c1-bf0c7aa69d2c.PNG" width=30% height=30%>    
+
+
 
 
 
