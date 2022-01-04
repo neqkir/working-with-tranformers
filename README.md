@@ -65,3 +65,17 @@ the soul will answer, "Honey, it is bad on a good feast. I am now a bitter soul!
 This life consists of the following stages:
 A full, clean heart of heart,
 ```
+
+3. `bart-text-summarization.ipynb`
+
+> (BART) can be seen as generalizing Bert (due to the bidirectional encoder) and GPT2 (with the left to right decoder).
+
+BART starts from BERT,
+
+* adding a causal decoder to BERT's bidirectional encoder architecture
+
+* replace BERT's fill-in-the blank cloze task with a more complicated mix of pretraining tasks.
+
+
+
+
