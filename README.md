@@ -141,6 +141,9 @@ Some comparative performance results for text summarization
 <img src="https://user-images.githubusercontent.com/89974426/148776092-391a951e-2ad4-43a9-ac79-7c9ecc94cd87.PNG" width=60% height=60%>    
 
 
+5. `mmbt.ipynb`
+
+"Supervised Multimodal Bitransformers for Classifying Images and Text" by Douwe Kiela, Suvrat Bhooshan, Hamed Firooz, Ethan Perez and Davide Testuggine https://arxiv.org/abs/1909.02950
 
 
 
