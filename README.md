@@ -72,7 +72,13 @@ This life consists of the following stages:
 A full, clean heart of heart,
 ```
 
-3. `bart-text-summarization.ipynb`
+3. `bertsumabs-text-summarization.ipynb`
+
+https://github.com/microsoft/nlp-recipes/blob/master/examples/text_summarization/abstractive_summarization_bertsumabs_cnndm.ipynb
+
+Original paper (2019) : Text summarization with pretrained encoders https://arxiv.org/pdf/1908.08345.pdf
+
+4. `bart-text-summarization.ipynb`
 
 https://github.com/sshleifer/blog_v2/blob/master/_notebooks/2020-03-12-bart.ipynb
 
