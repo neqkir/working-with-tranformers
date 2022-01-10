@@ -88,6 +88,10 @@ The framework explores both extractive (summarize by extracting 'representative'
 
 > We introduce a novel document-level encoder based on BERT which is able to express the semantics of a document and obtain representations for its sentences. Our extractive > model is built on top of this encoder by stacking several intersentence Transformer layers.
 
+BERT is token-based while summarization needs manipulating sentence-level inputs. To this end BERT's architecture is modified as follows
+
+<img src="https://user-images.githubusercontent.com/89974426/148779828-5b973ed6-4414-4fa9-ace7-2bab5a9ece4d.PNG" width=75% height=75%>    
+
 
 
 4. `bart-text-summarization.ipynb`
