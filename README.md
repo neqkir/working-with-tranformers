@@ -82,11 +82,13 @@ Pretrained models extend the idea of word embeddings learning contextual represe
 
 > token embeddings indicate the meaning of each token, segmentation embeddings are used to discriminate between two sentences (e.g., during a sentence-pair classification > task) and position embeddingsindicate the position of each token within the text sequence. These three embeddings are summed to a single input vector xi and fed to a > bidirectional Transformer with multiple layers:
 
+<img src="https://user-images.githubusercontent.com/89974426/148738594-6a2eb711-260d-4f37-b8a2-d94f042d8140.PNG" width=35% height=35%>    
+
 The framework explores both extractive (summarize by extracting 'representative' important sentences from the original text) and abstractive (summarize by condensing the original text into a generated 'representative' text which abstracts or preserve important information) modeling paradigms. 
 
 > We introduce a novel document-level encoder based on BERT which is able to express the semantics of a document and obtain representations for its sentences. Our extractive > model is built on top of this encoder by stacking several intersentence Transformer layers.
 
- 
+
 
 4. `bart-text-summarization.ipynb`
 
@@ -113,6 +115,20 @@ Pre-training masks spans of text, an example from the original paper.
 Original document is A B C D E. the span `[C, D]` is masked before encoding, leaving the corrupted document `A _ B _ E` as input to the encoder.
 
 The decoder (autogressive means "uses a causal mask") must reconstruct the original document, using the encoder's output and previous uncorrupted tokens.
+
+Some results, a summary from BART
+
+```
+SomeSome of the possible possible things are different things that are different ones that are not the right 
+ones that is not the one that is the right one that are the one of the one is the one for the one. 
+Today the one in the world of the whole of the world.On this small a level, also known as the nanoscopic scale 
+or nanoscale, what can be used to manipulate matter as small as atoms, small molecules, proteins, antibodies, 
+and DNA bases that are less than 100 nanometers wide.For a few decades, scientists have been learning how to design 
+molecules that can operate in the human body. The field holds a lot of potential when itcomes to handling questions
+```
+
+A summary of the same text from GPT-2
+
 
 
 
