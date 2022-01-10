@@ -1,5 +1,7 @@
 # working-with-tranformers
 
+We use Google Colab to experiment with several models based on transformers (BERT, GPT-X, BART etc.) on various natural language processing tasks (text summarization, text generation, machine translation etc.). We first present below a summary of transformers-based models, from huggingface transformers library. We then present the details of each exercise in the present github repository.  
+
 ## summary of the models
 
 https://huggingface.co/docs/transformers/model_summary 
@@ -84,7 +86,11 @@ BART starts from BERT,
 
 Pre-training masks spans of text, an example from the original paper.
 
-<img src="https://user-images.githubusercontent.com/89974426/148036575-2e122b52-931a-45f8-b0c1-bf0c7aa69d2c.PNG" width=30% height=30%>    
+<img src="https://user-images.githubusercontent.com/89974426/148036575-2e122b52-931a-45f8-b0c1-bf0c7aa69d2c.PNG" width=50% height=50%>    
+
+Original document is A B C D E. the span `[C, D]` is masked before encoding, leaving the corrupted document `A _ B _ E` as input to the encoder.
+
+The decoder (autogressive means "uses a causal mask") must reconstruct the original document, using the encoder's output and previous uncorrupted tokens.
 
 
 
