@@ -131,7 +131,7 @@ Admittedly not perfect, but a starting point for tuning around.
 
 Some comparative performance results for text summarization
 
-<img src="https://user-images.githubusercontent.com/89974426/148776092-391a951e-2ad4-43a9-ac79-7c9ecc94cd87.PNG" width=70% height=70%>    
+<img src="https://user-images.githubusercontent.com/89974426/148776092-391a951e-2ad4-43a9-ac79-7c9ecc94cd87.PNG" width=60% height=60%>    
 
 
 
