@@ -1,6 +1,10 @@
 # working-with-tranformers
 
-We use Google Colab to experiment with several models based on transformers (BERT, GPT-X, BART etc.) on various natural language processing tasks (text summarization, text generation, machine translation etc.). We first present below a summary of transformers-based models, from huggingface transformers library. We then present the details of each exercise in the present github repository.  
+We use Google Colab to experiment with several models based on transformers (BERT, GPT-X, BART etc.) on various natural language processing tasks (text summarization, text generation, machine translation etc.). 
+
+We first present below a summary of transformers-based models, from huggingface transformers library. 
+
+We then present the details of each transformers exercise, model, task, data, reference paper, results.  
 
 ## summary of the models
 
@@ -71,6 +75,8 @@ A full, clean heart of heart,
 3. `bart-text-summarization.ipynb`
 
 https://github.com/sshleifer/blog_v2/blob/master/_notebooks/2020-03-12-bart.ipynb
+
+We train and use BART for text summarization.
 
 BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension https://arxiv.org/pdf/1910.13461.pdf 
 
