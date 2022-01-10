@@ -92,6 +92,7 @@ BERT is token-based while summarization needs manipulating sentence-level inputs
 
 <img src="https://user-images.githubusercontent.com/89974426/148779828-5b973ed6-4414-4fa9-ace7-2bab5a9ece4d.PNG" width=75% height=75%>    
 
+Diverse analyses are performed. ROUGE-1 and ROUGE-2 evaluate informativeness, ROUGE-L fluency. Next the author evaluate the best learning rates for the optimizers (encoder and decoder have different optimizers). They assess the repartition across the whole text of the selected sentences and the proportion of novel n-grams, appearing in the summary but not the input text. 
 
 
 4. `bart-text-summarization.ipynb`
