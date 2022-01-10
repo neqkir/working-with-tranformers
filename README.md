@@ -90,7 +90,7 @@ The framework explores both extractive (summarize by extracting 'representative'
 
 BERT is token-based while summarization needs manipulating sentence-level inputs. To this end BERT's architecture is modified as follows
 
-<img src="https://user-images.githubusercontent.com/89974426/148779828-5b973ed6-4414-4fa9-ace7-2bab5a9ece4d.PNG" width=75% height=75%>    
+<img src="https://user-images.githubusercontent.com/89974426/148779828-5b973ed6-4414-4fa9-ace7-2bab5a9ece4d.PNG" width=85% height=85%>    
 
 Model evaluation : 
 
