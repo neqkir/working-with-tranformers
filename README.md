@@ -78,6 +78,16 @@ https://github.com/microsoft/nlp-recipes/blob/master/examples/text_summarization
 
 Original paper (2019) : Text summarization with pretrained encoders https://arxiv.org/pdf/1908.08345.pdf
 
+Pretrained models extend the idea of word embeddings learning contextual representation from large-scale corpora using a language modeling objective. With BERT each token from the input text is assigned three kinds of embeddings : 
+
+> token embeddings indicate the meaning of each token, segmentation embeddings are used to discriminate between two sentences (e.g., during a sentence-pair classification > task) and position embeddingsindicate the position of each token within the text sequence. These three embeddings are summed to a single input vector xi and fed to a > bidirectional Transformer with multiple layers:
+
+The framework explores both extractive (summarize by extracting 'representative' important sentences from the original text) and abstractive (summarize by condensing the original text into a generated 'representative' text which abstracts or preserve important information) modeling paradigms. 
+
+> We introduce a novel document-level encoder based on BERT which is able to express the semantics of a document and obtain representations for its sentences. Our extractive > model is built on top of this encoder by stacking several intersentence Transformer layers.
+
+ 
+
 4. `bart-text-summarization.ipynb`
 
 https://github.com/sshleifer/blog_v2/blob/master/_notebooks/2020-03-12-bart.ipynb
@@ -103,6 +113,7 @@ Pre-training masks spans of text, an example from the original paper.
 Original document is A B C D E. the span `[C, D]` is masked before encoding, leaving the corrupted document `A _ B _ E` as input to the encoder.
 
 The decoder (autogressive means "uses a causal mask") must reconstruct the original document, using the encoder's output and previous uncorrupted tokens.
+
 
 
 
