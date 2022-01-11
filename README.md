@@ -143,8 +143,18 @@ Some comparative performance results for text summarization
 
 5. `mmbt.ipynb`
 
-"Supervised Multimodal Bitransformers for Classifying Images and Text" by Douwe Kiela, Suvrat Bhooshan, Hamed Firooz, Ethan Perez and Davide Testuggine https://arxiv.org/abs/1909.02950
+"Supervised Multimodal Bitransformers for Classifying Images and Text" by Douwe Kiela, Suvrat Bhooshan, Hamed Firooz, Ethan Perez and Davide Testuggine https://arxiv.org/abs/1909.02950 (Nov 2020)
 
+> A simple yet effective baseline for multimodal BERT-like architectures, a supervised multimodal bitransformer that jointly finetunes 
+> unimodally pretrained text and image encoders by projecting image embeddings to text token space.
+
+The picture below describes the architecture : 
+
+<img src="https://user-images.githubusercontent.com/89974426/148927810-d3db6d2e-aa82-4bd3-901f-c9cc401da220.PNG" width=60% height=60%>    
+
+* an image encoder using a ResNet-152 model pretrained over ImageNet - stride of 32 and generating a feature map with 2048 channels - with an average pooling over KxM grids yielding N=KM vectors (or embeddings) with 2048 dimensions, for each image. 
+
+* a multimodal transformer input layer, which is a pretrained BERT model taking contextual embeddings as an input, where contextual embeddings are the sum of segment, position and token embeddings. Additionnaly weights are learnt which project the N images to the D-dimensional input embedding space.
 
 
 
