@@ -20,6 +20,5 @@ summarized into >
 
 ![image](https://user-images.githubusercontent.com/89974426/153394114-5b206937-771e-4248-85bb-f6b85e8335e0.png)
 
-
-
+(3) `fine-tuned-bart-summarization-with-blurr.ipynb` --> jupyter notebook for BART using the blurr library, similar to the above illustrating the optional generation of several summaries in a row for quality refinement
 
