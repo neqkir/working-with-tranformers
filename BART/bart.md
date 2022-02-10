@@ -1,6 +1,6 @@
 (1) `bart-text-summarization.ipynb` --> a jupyter notebook to get started with bart summarization and `bart-text-summarization.py` its python edition
 
-(2) `fine-tuning-bart-summarization.py`--> we feed bart with some examples (13.000) of summarizations, i.e., we fine-tune on the summarization task (below the first few summaries) 
+(2) `fine-tuning-bart-summarization.py`--> we feed bart with some examples (13.000) of summarizations, i.e., we fine-tune on the summarization task (below the first few summaries from fake news digests https://www.kaggle.com/mrisdal/fake-news/data) 
 
 ![image](https://user-images.githubusercontent.com/89974426/153394398-a0cc6fe9-8fe1-4680-8f98-f088f1614192.png)
 
